@@ -4,14 +4,13 @@
 
 # INSTALLATION
 
-1. Install [the repository](https://github.com/CodeGameSlasher/Sphere)
+1. Install [the repository](https://github.com/codeince/Cube)
 2. Download [Python](https://python.org/downloads)
-3. Install requirements("pip install -r requirements.txt")
+3. Install requirements(``pip install -r requirements.txt``)
 4. Start the program using [Python](https://python.org/downloads)
 
-# What do Sphere Model means
-
-Sphere Model is a number of Sphere's mind, how he will answer your questions but that's simply random's seed
+# What do Cube Model means
+Cube Model is a number of Cube's mind, how he will answer your questions but that's simply random's seed
 
 # LANGUAGE CHANGING
 
@@ -21,4 +20,4 @@ Sphere Model is a number of Sphere's mind, how he will answer your questions but
 4. Edit string to "lang = 'your_language'"
 5. All done!
 
-You can create your custom Sphere using [this guide](https://github.com/codeince/Sphere/tree/main/.github/docs/langs/en/CUSTOMPACK.md)
+You can create your custom Cube using [this guide](https://github.com/codeince/Cube/tree/main/.github/docs/langs/en/CUSTOMPACK.md)

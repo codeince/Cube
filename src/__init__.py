@@ -18,7 +18,7 @@ class Answer:
     def __dict__(self) -> dict:
         return {'question': self.question, 'answer': self.answer}
     
-class Sphere(list[Answer]):
+class Cube(list[Answer]):
     def __init__(self, lang_build: dict, answers: dict, seed_: int | None = None):
         super().__init__()
         self.lang = lang_build
