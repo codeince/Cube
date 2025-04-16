@@ -19,7 +19,7 @@ class Answer:
         return {'question': self.question, 'answer': self.answer}
     
 class Cube(list[Answer]):
-    def __init__(self, lang_build: dict, answers: dict, seed_: int | None = None):
+    def __init__(self, lang_build: dict, answers: dict, seed_: int = None):
         super().__init__()
         self.lang = lang_build
         self.answers = answers
