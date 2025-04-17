@@ -6,6 +6,8 @@
         "type_text": "Чё надо, пиши...\n>>>",
         "model_text": "⚡ Режим: Куб{seed}",
         "custom_model_text": "Выбирай, че использовать:",
+        "war_and_piece_warning": "Я что, блять, на урок литературы пришёл? Пиши короче",
+        "war_and_piece_warning_len": 50,
         "stop_words": [
             "отстань",
             "закругляйся",

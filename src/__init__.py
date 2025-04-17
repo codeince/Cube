@@ -40,18 +40,21 @@ class Cube(list[Answer]):
     def _generate_answer(self, question: str) -> str:
         q = question.lower().translate(str.maketrans(' ', ' ', punctuation))
 
-        for answer_type in self.answers.values():
-            if True in [True for word in q.split() if word in answer_type.get('masks')]:
-                result = capitalize(choice(answer_type.get('answers')))
-                break
+        if len(q) < self.lang.get("war_and_piece_warning_len"):
+            for answer_type in self.answers.values():
+                if True in [True for word in q.split() if word in answer_type.get('masks')]:
+                    result = capitalize(choice(answer_type.get('answers')))
+                    break
+            else:
+                result = capitalize(choice(self.answers.get('default').get('answers')))
+            
+            if result.find("%rand%") != -1:
+                result_list = result.split('%rand%')
+                result = result_list[0]
+                for i in result_list[1:]:
+                    result = str(randint(0, 100)).join((result, i))
         else:
-            result = capitalize(choice(self.answers.get('default').get('answers')))
-        
-        if result.find("%rand%") != -1:
-            result_list = result.split('%rand%')
-            result = result_list[0]
-            for i in result_list[1:]:
-                result = str(randint(0, 100)).join((result, i))
+            result = self.lang.get("war_and_piece_warning")
 
         return Answer(question, result)
 

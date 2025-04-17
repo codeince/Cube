@@ -26,6 +26,7 @@ For now this file has so pure settings but included settings are:
         {seed} - current "identity"
     5. "custom_model_text": text formatting for choosing model seed
     6. "stop_words": list of words for Cube stopping
+    7. "war_and_piece_warning": text will show when user question equal or more than "war_and_piece_warning_len"
 
 # Answer file
 
