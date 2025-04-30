@@ -16,16 +16,27 @@ Your resource-pack must include this files:
 For now this file has so pure settings but included settings are:
 
 1. "lang": language of file
+
 2. "text": displayed text settings:
+
     1. "init_text": text writes when model starts
+
     2. "answer_formatting": text formatting
+
         {answer} - answer
+
         {question}" - user question
+
     3. "type_text": question input text
+
     4. "model_text": text formatting of Model
+
         {seed} - current "identity"
+
     5. "custom_model_text": text formatting for choosing model seed
+
     6. "stop_words": list of words for Cube stopping
+
     7. "war_and_piece_warning": text will show when user question equal or more than "war_and_piece_warning_len"
 
 # Answer file
@@ -33,12 +44,15 @@ For now this file has so pure settings but included settings are:
 In this file logically too many different settings... groups:
 
 1. "lang": language of file
+
 2. "answers": list of answer groups
 
     "test answer group": answer group
 
         1. "masks": piece of text in user question for determination of current group(first mask should be "#group_name")
+
         2. "answers": answers for group questions
+        
             %rand% for generation random number here
 
 # And keep in mind
